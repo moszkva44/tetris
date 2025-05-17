@@ -1,16 +1,20 @@
 # Javascript Tetris Game
 
-## Demo (Web)
+## Try it on the Web
 
 https://moszkva44.github.io/tetris/app/src/main/assets/index.html
 
+![desktop](docs/desktop.png)
 
 
-## Demo (Android)
+
+## ...or download the android app
 
 https://github.com/moszkva44/tetris/releases/tag/android-release
 
-# ![desktop](docs/desktop.png) 
+![mobile](docs/mobile.png)
+
+#  
 
 ## Features
 
@@ -44,7 +48,7 @@ https://github.com/moszkva44/tetris/releases/tag/android-release
 
 * On mobile devices there is a dedicated input pad in the footer section that you can use to control the falling shape. The control mechanism is the same as described above.
 
-  ![mobile](docs/mobile.png)
+  
 
 ## Credits
 
