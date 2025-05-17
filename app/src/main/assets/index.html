@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/globals.js"></script>
+		<script src="js/floatingscore.js"></script>		
+		<script src="js/position.js"></script>
+		<script src="js/cascademanager.js"></script>
+		<script src="js/brick.js"></script>
+		<script src="js/button.js"></script>
+		<script src="js/direction.js"></script>
+		<script src="js/animmanager.js"></script>
+		<script src="js/shapefactory.js"></script>
+		<script src="js/shapemanager.js"></script>
+		<script src="js/eventmanager.js"></script>
+		<script src="js/shape.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/game.js"></script>
+		<script src="js/matrix.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div>
+				<div id="menu">
+					<input type="button" class="shadowed" id="newButton" value="NEW"/>
+					<input type="button" class="shadowed" id="pauseButton" style="display:none" value="PAUSE"/>
+					<input type="button" class="shadowed" id="gridOnButton" value="GRID ON"/>
+					<input type="button" class="shadowed" id="gridOffButton" value="GRID OFF"/>
+					<input type="button" class="shadowed" id="continueButton" style="display:none" value="RESUME"/>
+				</div>
+				<div id="matrix" style="display:none;"></div>
+				<canvas class="shadowed" id="tetrisMenu"></canvas>
+				<canvas class="shadowed" id="tetrisGame"></canvas>
+				<canvas class="shadowed" id="tetrisInput"></canvas>
+			</div>
+		</div>
+		<div id="start_screen">
+			<table>
+				<tr>
+					<td>
+						<select id="gameModeSelector">
+							<option value="0">Naive gravity</option>
+							<option value="1">Cascade gravity</option>	
+						</select>
+						<span class="row">
+							<select id="levelSelector"></select>
+						</span>						
+						<span class="row">
+							<input type="button" id="clickStartButton" value="START"/>
+						</span>
+						<span class="dsecription row"><b>*Naive gravity:</b> This is the standard tetris physics you probably know well. It is naive because after rows being cleared some pieces may remain floating so the gravity works only until the given shape is placed at the first time.</span>
+						<span class="dsecription row"><b>*Cascade gravity:</b> The gravity affects pieces even after a shape being placed. If rows get cleared and therefore some pieces miss their underpinning, they will fall until they get a stable position again either on the ground or on another piece.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>		
+		<div id="game_over_screen"><img id="imgGameOver"/>GAME OVER</div>		
+		<div id="paused_screen">PAUSED</div>		
+	</body>
+</html>
