@@ -10,7 +10,7 @@ https://moszkva44.github.io/tetris/app/src/main/assets/index.html
 
 ## ...or download the android app
 
-https://github.com/moszkva44/tetris/blob/master/releases/tetris.apk
+https://github.com/moszkva44/tetris/releases/download/release/tetris.apk
 
 ![mobile](docs/mobile.png)
 
