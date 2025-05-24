@@ -28,7 +28,6 @@ class MainActivity : ComponentActivity() {
             TetrisTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val myWebView = WebView(this)
-
                     setContentView(myWebView)
                     renderPage(
                         myWebView = myWebView
@@ -44,7 +43,7 @@ fun renderPage(myWebView: WebView) {
     myWebView.setInitialScale(1);
     myWebView.settings.javaScriptEnabled = true
     myWebView.settings.domStorageEnabled = true;
-    myWebView.settings.loadWithOverviewMode = true;
+    //myWebView.settings.loadWithOverviewMode = true;
     myWebView.settings.useWideViewPort = true;
 
     myWebView.loadUrl("file:///android_asset/index.html");
