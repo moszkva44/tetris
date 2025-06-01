@@ -102,3 +102,11 @@ canvas#tetrisMenu{
     0 0 0 2px rgb(216, 217, 232),
     0.3em 0.3em 1em rgb(0 0 0 / 60%);	
 }
+
+span#fpsCounter{
+	color: white;
+	font-weight: bold;
+	maring-left: 5px;
+	font-family: Terminal;	
+	font-size: 0.8rem;
+}
